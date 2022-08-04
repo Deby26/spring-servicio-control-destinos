@@ -1,0 +1,608 @@
+2022-08-04 23:16:24.585  INFO 19960 --- [restartedMain] com.edutecno.Application                 : Starting Application using Java 17.0.3 on DESKTOP-RPU8LSQ with PID 19960 (C:\Users\debor\Desktop\xdxd\M6.4-Desafio-ServicioControlDestinos\target\classes started by debor in C:\Users\debor\Desktop\xdxd\M6.4-Desafio-ServicioControlDestinos)
+2022-08-04 23:16:24.591  INFO 19960 --- [restartedMain] com.edutecno.Application                 : No active profile set, falling back to 1 default profile: "default"
+2022-08-04 23:16:24.664  INFO 19960 --- [restartedMain] o.s.b.devtools.restart.ChangeableUrls    : The Class-Path manifest attribute in C:\Users\debor\.m2\repository\com\oracle\database\jdbc\ojdbc8\21.5.0.0\ojdbc8-21.5.0.0.jar referenced one or more files that do not exist: file:/C:/Users/debor/.m2/repository/com/oracle/database/jdbc/ojdbc8/21.5.0.0/oraclepki.jar
+2022-08-04 23:16:24.666  INFO 19960 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : Devtools property defaults active! Set 'spring.devtools.add-properties' to 'false' to disable
+2022-08-04 23:16:24.666  INFO 19960 --- [restartedMain] .e.DevToolsPropertyDefaultsPostProcessor : For additional web related logging consider setting the 'logging.level.web' property to 'DEBUG'
+2022-08-04 23:16:25.433  INFO 19960 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Bootstrapping Spring Data JPA repositories in DEFAULT mode.
+2022-08-04 23:16:25.497  INFO 19960 --- [restartedMain] .s.d.r.c.RepositoryConfigurationDelegate : Finished Spring Data repository scanning in 53 ms. Found 2 JPA repository interfaces.
+2022-08-04 23:16:26.167  INFO 19960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat initialized with port(s): 8082 (http)
+2022-08-04 23:16:26.179  INFO 19960 --- [restartedMain] o.apache.catalina.core.StandardService   : Starting service [Tomcat]
+2022-08-04 23:16:26.181  INFO 19960 --- [restartedMain] org.apache.catalina.core.StandardEngine  : Starting Servlet engine: [Apache Tomcat/9.0.64]
+2022-08-04 23:16:26.277  INFO 19960 --- [restartedMain] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring embedded WebApplicationContext
+2022-08-04 23:16:26.277  INFO 19960 --- [restartedMain] w.s.c.ServletWebServerApplicationContext : Root WebApplicationContext: initialization completed in 1611 ms
+2022-08-04 23:16:26.531  INFO 19960 --- [restartedMain] o.hibernate.jpa.internal.util.LogHelper  : HHH000204: Processing PersistenceUnitInfo [name: default]
+2022-08-04 23:16:26.597  INFO 19960 --- [restartedMain] org.hibernate.Version                    : HHH000412: Hibernate ORM core version 5.6.9.Final
+2022-08-04 23:16:26.794  INFO 19960 --- [restartedMain] o.hibernate.annotations.common.Version   : HCANN000001: Hibernate Commons Annotations {5.1.2.Final}
+2022-08-04 23:16:26.916  INFO 19960 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Starting...
+2022-08-04 23:16:27.185  INFO 19960 --- [restartedMain] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Start completed.
+2022-08-04 23:16:27.203  INFO 19960 --- [restartedMain] org.hibernate.dialect.Dialect            : HHH000400: Using dialect: org.hibernate.dialect.Oracle8iDialect
+2022-08-04 23:16:28.111  WARN 19960 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "drop table destino cascade constraints" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table destino cascade constraints" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:387) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:371) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:246) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:156) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:128) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:114) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:157) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.1.jar:2.7.1]
+	at com.edutecno.Application.main(Application.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.1.jar:2.7.1]
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1151) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:771) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:498) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:112) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1011) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1531) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1311) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2163) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2118) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	... 39 common frames omitted
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	... 54 common frames omitted
+
+2022-08-04 23:16:28.117  WARN 19960 --- [restartedMain] o.h.t.s.i.ExceptionHandlerLoggedImpl     : GenerationTarget encountered exception accepting command : Error executing DDL "drop table pasajero cascade constraints" via JDBC Statement
+
+org.hibernate.tool.schema.spi.CommandAcceptanceException: Error executing DDL "drop table pasajero cascade constraints" via JDBC Statement
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:67) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlString(SchemaDropperImpl.java:387) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.applySqlStrings(SchemaDropperImpl.java:371) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.dropFromMetadata(SchemaDropperImpl.java:246) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.performDrop(SchemaDropperImpl.java:156) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:128) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.internal.SchemaDropperImpl.doDrop(SchemaDropperImpl.java:114) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.performDatabaseAction(SchemaManagementToolCoordinator.java:157) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.tool.schema.spi.SchemaManagementToolCoordinator.process(SchemaManagementToolCoordinator.java:85) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.internal.SessionFactoryImpl.<init>(SessionFactoryImpl.java:335) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.boot.internal.SessionFactoryBuilderImpl.build(SessionFactoryBuilderImpl.java:471) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.hibernate.jpa.boot.internal.EntityManagerFactoryBuilderImpl.build(EntityManagerFactoryBuilderImpl.java:1498) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	at org.springframework.orm.jpa.vendor.SpringHibernateJpaPersistenceProvider.createContainerEntityManagerFactory(SpringHibernateJpaPersistenceProvider.java:58) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.createNativeEntityManagerFactory(LocalContainerEntityManagerFactoryBean.java:365) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.buildNativeEntityManagerFactory(AbstractEntityManagerFactoryBean.java:409) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.AbstractEntityManagerFactoryBean.afterPropertiesSet(AbstractEntityManagerFactoryBean.java:396) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.orm.jpa.LocalContainerEntityManagerFactoryBean.afterPropertiesSet(LocalContainerEntityManagerFactoryBean.java:341) ~[spring-orm-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.invokeInitMethods(AbstractAutowireCapableBeanFactory.java:1863) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.initializeBean(AbstractAutowireCapableBeanFactory.java:1800) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.doCreateBean(AbstractAutowireCapableBeanFactory.java:620) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractAutowireCapableBeanFactory.createBean(AbstractAutowireCapableBeanFactory.java:542) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.lambda$doGetBean$0(AbstractBeanFactory.java:335) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.DefaultSingletonBeanRegistry.getSingleton(DefaultSingletonBeanRegistry.java:234) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.doGetBean(AbstractBeanFactory.java:333) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.beans.factory.support.AbstractBeanFactory.getBean(AbstractBeanFactory.java:208) ~[spring-beans-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.getBean(AbstractApplicationContext.java:1154) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.finishBeanFactoryInitialization(AbstractApplicationContext.java:908) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.context.support.AbstractApplicationContext.refresh(AbstractApplicationContext.java:583) ~[spring-context-5.3.21.jar:5.3.21]
+	at org.springframework.boot.web.servlet.context.ServletWebServerApplicationContext.refresh(ServletWebServerApplicationContext.java:147) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refresh(SpringApplication.java:734) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.refreshContext(SpringApplication.java:408) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:308) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1306) ~[spring-boot-2.7.1.jar:2.7.1]
+	at org.springframework.boot.SpringApplication.run(SpringApplication.java:1295) ~[spring-boot-2.7.1.jar:2.7.1]
+	at com.edutecno.Application.main(Application.java:10) ~[classes/:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke0(Native Method) ~[na:na]
+	at java.base/jdk.internal.reflect.NativeMethodAccessorImpl.invoke(NativeMethodAccessorImpl.java:77) ~[na:na]
+	at java.base/jdk.internal.reflect.DelegatingMethodAccessorImpl.invoke(DelegatingMethodAccessorImpl.java:43) ~[na:na]
+	at java.base/java.lang.reflect.Method.invoke(Method.java:568) ~[na:na]
+	at org.springframework.boot.devtools.restart.RestartLauncher.run(RestartLauncher.java:49) ~[spring-boot-devtools-2.7.1.jar:2.7.1]
+Caused by: java.sql.SQLSyntaxErrorException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:630) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:564) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.processError(T4C8Oall.java:1151) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.receive(T4CTTIfun.java:771) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.T4CTTIfun.doRPC(T4CTTIfun.java:299) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.T4C8Oall.doOALL(T4C8Oall.java:498) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.doOall8(T4CStatement.java:112) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.T4CStatement.executeForRows(T4CStatement.java:1011) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeSQLStatement(OracleStatement.java:1531) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.doExecuteWithTimeout(OracleStatement.java:1311) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.executeInternal(OracleStatement.java:2163) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.OracleStatement.execute(OracleStatement.java:2118) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at oracle.jdbc.driver.OracleStatementWrapper.execute(OracleStatementWrapper.java:328) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	at com.zaxxer.hikari.pool.ProxyStatement.execute(ProxyStatement.java:94) ~[HikariCP-4.0.3.jar:na]
+	at com.zaxxer.hikari.pool.HikariProxyStatement.execute(HikariProxyStatement.java) ~[HikariCP-4.0.3.jar:na]
+	at org.hibernate.tool.schema.internal.exec.GenerationTargetToDatabase.accept(GenerationTargetToDatabase.java:54) ~[hibernate-core-5.6.9.Final.jar:5.6.9.Final]
+	... 39 common frames omitted
+Caused by: oracle.jdbc.OracleDatabaseException: ORA-00942: table or view does not exist
+
+	at oracle.jdbc.driver.T4CTTIoer11.processError(T4CTTIoer11.java:637) ~[ojdbc8-21.5.0.0.jar:21.5.0.0.0]
+	... 54 common frames omitted
+
+2022-08-04 23:16:28.378  INFO 19960 --- [restartedMain] o.h.e.t.j.p.i.JtaPlatformInitiator       : HHH000490: Using JtaPlatform implementation: [org.hibernate.engine.transaction.jta.platform.internal.NoJtaPlatform]
+2022-08-04 23:16:28.389  INFO 19960 --- [restartedMain] j.LocalContainerEntityManagerFactoryBean : Initialized JPA EntityManagerFactory for persistence unit 'default'
+2022-08-04 23:16:28.810  WARN 19960 --- [restartedMain] JpaBaseConfiguration$JpaWebConfiguration : spring.jpa.open-in-view is enabled by default. Therefore, database queries may be performed during view rendering. Explicitly configure spring.jpa.open-in-view to disable this warning
+2022-08-04 23:16:28.935 DEBUG 19960 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerAdapter : ControllerAdvice beans: 0 @ModelAttribute, 0 @InitBinder, 1 RequestBodyAdvice, 1 ResponseBodyAdvice
+2022-08-04 23:16:29.034 DEBUG 19960 --- [restartedMain] s.w.s.m.m.a.RequestMappingHandlerMapping : 14 mappings in 'requestMappingHandlerMapping'
+2022-08-04 23:16:29.062 DEBUG 19960 --- [restartedMain] o.s.w.s.handler.SimpleUrlHandlerMapping  : Patterns [/webjars/**, /**] in 'resourceHandlerMapping'
+2022-08-04 23:16:29.073 DEBUG 19960 --- [restartedMain] .m.m.a.ExceptionHandlerExceptionResolver : ControllerAdvice beans: 0 @ExceptionHandler, 1 ResponseBodyAdvice
+2022-08-04 23:16:29.242  INFO 19960 --- [restartedMain] o.s.b.d.a.OptionalLiveReloadServer       : LiveReload server is running on port 35729
+2022-08-04 23:16:29.290  INFO 19960 --- [restartedMain] o.s.b.w.embedded.tomcat.TomcatWebServer  : Tomcat started on port(s): 8082 (http) with context path ''
+2022-08-04 23:16:29.303  INFO 19960 --- [restartedMain] com.edutecno.Application                 : Started Application in 5.25 seconds (JVM running for 6.137)
+2022-08-04 23:16:34.731  INFO 19960 --- [http-nio-8082-exec-1] o.a.c.c.C.[Tomcat].[localhost].[/]       : Initializing Spring DispatcherServlet 'dispatcherServlet'
+2022-08-04 23:16:34.731  INFO 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Initializing Servlet 'dispatcherServlet'
+2022-08-04 23:16:34.732 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected StandardServletMultipartResolver
+2022-08-04 23:16:34.732 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected AcceptHeaderLocaleResolver
+2022-08-04 23:16:34.732 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected FixedThemeResolver
+2022-08-04 23:16:34.733 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.view.DefaultRequestToViewNameTranslator@4eab9e88
+2022-08-04 23:16:34.734 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Detected org.springframework.web.servlet.support.SessionFlashMapManager@3649951b
+2022-08-04 23:16:34.738 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : enableLoggingRequestDetails='false': request parameters and headers will be masked to prevent unsafe logging of potentially sensitive data
+2022-08-04 23:16:34.738  INFO 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed initialization in 7 ms
+2022-08-04 23:16:34.752 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-08-04 23:16:34.760 DEBUG 19960 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:16:34.803  INFO 19960 --- [http-nio-8082-exec-1] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:16:35.085 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:16:35.353 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:16:35.448 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/favicon.ico", parameters={}
+2022-08-04 23:16:35.452 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.w.s.handler.SimpleUrlHandlerMapping  : Mapped to ResourceHttpRequestHandler [classpath [META-INF/resources/], classpath [resources/], classpath [static/], classpath [public/], ServletContext [/]]
+2022-08-04 23:16:35.457 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.w.s.r.ResourceHttpRequestHandler     : Resource not found
+2022-08-04 23:16:35.458 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 404 NOT_FOUND
+2022-08-04 23:16:35.463 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : "ERROR" dispatch for GET "/error", parameters={}
+2022-08-04 23:16:35.465 DEBUG 19960 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to org.springframework.boot.autoconfigure.web.servlet.error.BasicErrorController#error(HttpServletRequest)
+2022-08-04 23:16:35.489 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Using 'application/json;q=0.8', given [image/avif, image/webp, image/apng, image/svg+xml, image/*, */*;q=0.8] and supported [application/json, application/*+json, application/json, application/*+json]
+2022-08-04 23:16:35.490 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.w.s.m.m.a.HttpEntityMethodProcessor  : Writing [{timestamp=Thu Aug 04 23:16:35 CEST 2022, status=404, error=Not Found, message=No message available, (truncated)...]
+2022-08-04 23:16:35.546 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Exiting from "ERROR" dispatch, status 404
+2022-08-04 23:16:39.442 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:16:39.443 DEBUG 19960 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:16:39.456  INFO 19960 --- [http-nio-8082-exec-3] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:16:39.462 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:16:39.475 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:16:41.164 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros/crear", parameters={}
+2022-08-04 23:16:41.165 DEBUG 19960 --- [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#crear()
+2022-08-04 23:16:41.168  INFO 19960 --- [http-nio-8082-exec-4] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:16:41.180 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:16:41.282 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:17:11.754 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : POST "/pasajeros/crear", parameters={masked}
+2022-08-04 23:17:11.755 DEBUG 19960 --- [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#crear(Pasajero)
+2022-08-04 23:17:11.770  INFO 19960 --- [http-nio-8082-exec-5] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp save()
+2022-08-04 23:17:11.824 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.view.RedirectView        : View [RedirectView], model {}
+2022-08-04 23:17:11.825 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-08-04 23:17:11.830 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:17:11.831 DEBUG 19960 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:17:11.831  INFO 19960 --- [http-nio-8082-exec-6] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:17:11.847 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:17:11.873 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:17:14.696 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/destinos/crear", parameters={}
+2022-08-04 23:17:14.697 DEBUG 19960 --- [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#crear()
+2022-08-04 23:17:14.700  INFO 19960 --- [http-nio-8082-exec-7] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:17:14.704 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:17:14.716 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:17:30.648 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/destinos/crear", parameters={masked}
+2022-08-04 23:17:30.649 DEBUG 19960 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#crear(Destino)
+2022-08-04 23:17:30.661  INFO 19960 --- [http-nio-8082-exec-9] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp save()
+2022-08-04 23:17:30.668 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.view.RedirectView        : View [RedirectView], model {}
+2022-08-04 23:17:30.669 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-08-04 23:17:30.672 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:17:30.672 DEBUG 19960 --- [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:17:30.674  INFO 19960 --- [http-nio-8082-exec-8] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:17:30.678 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:17:30.683 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:17:32.286 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/destinos/editar?id=1", parameters={masked}
+2022-08-04 23:17:32.287 DEBUG 19960 --- [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#editar(Long)
+2022-08-04 23:17:32.295  INFO 19960 --- [http-nio-8082-exec-10] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp finfById()
+2022-08-04 23:17:32.308  INFO 19960 --- [http-nio-8082-exec-10] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:17:32.312 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:17:32.342 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:17:33.314 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/destinos/editar", parameters={masked}
+2022-08-04 23:17:33.316 DEBUG 19960 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#editar(Destino)
+2022-08-04 23:17:33.335  INFO 19960 --- [http-nio-8082-exec-1] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp update()
+2022-08-04 23:17:33.357 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.view.RedirectView        : View [RedirectView], model {}
+2022-08-04 23:17:33.358 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-08-04 23:17:33.362 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:17:33.363 DEBUG 19960 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:17:33.363  INFO 19960 --- [http-nio-8082-exec-2] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:17:33.374 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:17:33.382 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:17:34.953 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-08-04 23:17:34.954 DEBUG 19960 --- [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:17:34.961  INFO 19960 --- [http-nio-8082-exec-4] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:17:34.966 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:17:34.970 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:17:36.449 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-08-04 23:17:36.450 DEBUG 19960 --- [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:17:36.452  INFO 19960 --- [http-nio-8082-exec-5] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:17:36.455 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:17:36.460 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:17:37.394 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:17:37.395 DEBUG 19960 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:17:37.397  INFO 19960 --- [http-nio-8082-exec-6] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:17:37.401 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:17:37.409 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:17:41.213 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros/crear", parameters={}
+2022-08-04 23:17:41.213 DEBUG 19960 --- [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#crear()
+2022-08-04 23:17:41.220  INFO 19960 --- [http-nio-8082-exec-7] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:17:41.225 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:17:41.228 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:17:55.796 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : POST "/pasajeros/crear", parameters={masked}
+2022-08-04 23:17:55.797 DEBUG 19960 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#crear(Pasajero)
+2022-08-04 23:17:55.802  INFO 19960 --- [http-nio-8082-exec-9] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp save()
+2022-08-04 23:17:55.805 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.view.RedirectView        : View [RedirectView], model {}
+2022-08-04 23:17:55.805 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-08-04 23:17:55.810 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:17:55.810 DEBUG 19960 --- [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:17:55.811  INFO 19960 --- [http-nio-8082-exec-8] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:17:55.814 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:17:55.822 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:17:57.289 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/destinos/crear", parameters={}
+2022-08-04 23:17:57.290 DEBUG 19960 --- [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#crear()
+2022-08-04 23:17:57.294  INFO 19960 --- [http-nio-8082-exec-10] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:17:57.299 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:17:57.302 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:18:11.385 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : POST "/destinos/crear", parameters={masked}
+2022-08-04 23:18:11.388 DEBUG 19960 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#crear(Destino)
+2022-08-04 23:18:11.390  INFO 19960 --- [http-nio-8082-exec-1] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp save()
+2022-08-04 23:18:11.394 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.view.RedirectView        : View [RedirectView], model {}
+2022-08-04 23:18:11.395 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-08-04 23:18:11.399 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:18:11.399 DEBUG 19960 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:18:11.400  INFO 19960 --- [http-nio-8082-exec-2] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:18:11.403 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:18:11.407 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:18:13.420 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/destinos/editar?id=2", parameters={masked}
+2022-08-04 23:18:13.421 DEBUG 19960 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#editar(Long)
+2022-08-04 23:18:13.424  INFO 19960 --- [http-nio-8082-exec-3] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp finfById()
+2022-08-04 23:18:13.428  INFO 19960 --- [http-nio-8082-exec-3] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:18:13.433 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:18:13.438 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:18:15.438 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : POST "/destinos/editar", parameters={masked}
+2022-08-04 23:18:15.439 DEBUG 19960 --- [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#editar(Destino)
+2022-08-04 23:18:15.444  INFO 19960 --- [http-nio-8082-exec-4] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp update()
+2022-08-04 23:18:15.450 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.web.servlet.view.RedirectView        : View [RedirectView], model {}
+2022-08-04 23:18:15.450 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-08-04 23:18:15.459 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:18:15.460 DEBUG 19960 --- [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:18:15.461  INFO 19960 --- [http-nio-8082-exec-5] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:18:15.464 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:18:15.468 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:18:17.298 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-08-04 23:18:17.298 DEBUG 19960 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:18:17.302  INFO 19960 --- [http-nio-8082-exec-6] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:18:17.307 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:18:17.312 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:18:18.465 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:18:18.465 DEBUG 19960 --- [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:18:18.471  INFO 19960 --- [http-nio-8082-exec-7] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:18:18.476 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:18:18.485 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:18:22.768 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros/crear", parameters={}
+2022-08-04 23:18:22.769 DEBUG 19960 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#crear()
+2022-08-04 23:18:22.780  INFO 19960 --- [http-nio-8082-exec-9] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:18:22.784 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:18:22.787 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:18:37.623 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : POST "/pasajeros/crear", parameters={masked}
+2022-08-04 23:18:37.623 DEBUG 19960 --- [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#crear(Pasajero)
+2022-08-04 23:18:37.628  INFO 19960 --- [http-nio-8082-exec-10] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp save()
+2022-08-04 23:18:37.631 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.view.RedirectView        : View [RedirectView], model {}
+2022-08-04 23:18:37.632 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-08-04 23:18:37.635 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:18:37.635 DEBUG 19960 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:18:37.635  INFO 19960 --- [http-nio-8082-exec-1] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:18:37.639 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:18:37.650 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:18:38.984 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/destinos/crear", parameters={}
+2022-08-04 23:18:38.984 DEBUG 19960 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#crear()
+2022-08-04 23:18:38.992  INFO 19960 --- [http-nio-8082-exec-2] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:18:38.999 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:18:39.002 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:18:57.063 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : POST "/destinos/crear", parameters={masked}
+2022-08-04 23:18:57.065 DEBUG 19960 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#crear(Destino)
+2022-08-04 23:18:57.069  INFO 19960 --- [http-nio-8082-exec-3] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp save()
+2022-08-04 23:18:57.073 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.web.servlet.view.RedirectView        : View [RedirectView], model {}
+2022-08-04 23:18:57.074 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-08-04 23:18:57.077 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:18:57.077 DEBUG 19960 --- [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:18:57.078  INFO 19960 --- [http-nio-8082-exec-4] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:18:57.082 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:18:57.085 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:18:58.842 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/destinos/editar?id=3", parameters={masked}
+2022-08-04 23:18:58.843 DEBUG 19960 --- [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#editar(Long)
+2022-08-04 23:18:58.847  INFO 19960 --- [http-nio-8082-exec-5] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp finfById()
+2022-08-04 23:18:58.850  INFO 19960 --- [http-nio-8082-exec-5] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:18:58.855 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:18:58.860 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:19:00.871 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : POST "/destinos/editar", parameters={masked}
+2022-08-04 23:19:00.872 DEBUG 19960 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#editar(Destino)
+2022-08-04 23:19:00.879  INFO 19960 --- [http-nio-8082-exec-6] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp update()
+2022-08-04 23:19:00.886 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.view.RedirectView        : View [RedirectView], model {}
+2022-08-04 23:19:00.887 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-08-04 23:19:00.890 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:19:00.891 DEBUG 19960 --- [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:19:00.891  INFO 19960 --- [http-nio-8082-exec-7] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:19:00.895 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:19:00.900 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:19:03.476 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/destinos/editar?id=1", parameters={masked}
+2022-08-04 23:19:03.477 DEBUG 19960 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#editar(Long)
+2022-08-04 23:19:03.481  INFO 19960 --- [http-nio-8082-exec-9] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp finfById()
+2022-08-04 23:19:03.484  INFO 19960 --- [http-nio-8082-exec-9] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:19:03.489 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:19:03.494 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:19:05.588 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : POST "/destinos/editar", parameters={masked}
+2022-08-04 23:19:05.588 DEBUG 19960 --- [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#editar(Destino)
+2022-08-04 23:19:05.594  INFO 19960 --- [http-nio-8082-exec-8] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp update()
+2022-08-04 23:19:05.601 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.web.servlet.view.RedirectView        : View [RedirectView], model {}
+2022-08-04 23:19:05.601 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 302 FOUND
+2022-08-04 23:19:05.607 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:19:05.608 DEBUG 19960 --- [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:19:05.608  INFO 19960 --- [http-nio-8082-exec-10] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:19:05.612 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:19:05.616 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:19:06.571 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-08-04 23:19:06.571 DEBUG 19960 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:19:06.574  INFO 19960 --- [http-nio-8082-exec-1] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:19:06.577 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:19:06.580 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:19:07.346 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:19:07.347 DEBUG 19960 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:19:07.350  INFO 19960 --- [http-nio-8082-exec-2] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:19:07.354 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:19:07.366 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:21:01.571 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:21:01.571 DEBUG 19960 --- [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:21:01.574  INFO 19960 --- [http-nio-8082-exec-5] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:21:01.579 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:21:01.591 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:21:36.179 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:21:36.180 DEBUG 19960 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:21:36.184  INFO 19960 --- [http-nio-8082-exec-6] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:21:36.190 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:21:36.193 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:21:42.504 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:21:42.505 DEBUG 19960 --- [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:21:42.508  INFO 19960 --- [http-nio-8082-exec-7] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:21:42.511 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:21:42.514 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:21:44.266 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:21:44.266 DEBUG 19960 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:21:44.268  INFO 19960 --- [http-nio-8082-exec-9] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:21:44.273 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:21:44.286 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:21:45.168 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:21:45.168 DEBUG 19960 --- [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:21:45.172  INFO 19960 --- [http-nio-8082-exec-8] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:21:45.175 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:21:45.185 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:21:58.115 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:21:58.115 DEBUG 19960 --- [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:21:58.116  INFO 19960 --- [http-nio-8082-exec-10] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:21:58.119 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:21:58.130 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:21:58.806 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:21:58.806 DEBUG 19960 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:21:58.808  INFO 19960 --- [http-nio-8082-exec-1] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:21:58.812 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:21:58.825 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:21:59.452 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:21:59.452 DEBUG 19960 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:21:59.454  INFO 19960 --- [http-nio-8082-exec-2] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:21:59.458 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:21:59.460 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:22:00.502 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:22:00.503 DEBUG 19960 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:22:00.506  INFO 19960 --- [http-nio-8082-exec-3] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:22:00.509 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:22:00.512 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:23:23.253 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:23:23.253 DEBUG 19960 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:23:23.254  INFO 19960 --- [http-nio-8082-exec-6] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:23:23.257 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:23:23.260 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:23:24.218 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:23:24.220 DEBUG 19960 --- [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:23:24.222  INFO 19960 --- [http-nio-8082-exec-7] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:23:24.225 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:23:24.234 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:23:25.098 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:23:25.099 DEBUG 19960 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:23:25.100  INFO 19960 --- [http-nio-8082-exec-9] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:23:25.104 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:23:25.114 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:24:36.679 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:24:36.679 DEBUG 19960 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:24:36.682  INFO 19960 --- [http-nio-8082-exec-1] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:24:36.686 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:24:36.695 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:24:37.745 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:24:37.746 DEBUG 19960 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:24:37.748  INFO 19960 --- [http-nio-8082-exec-2] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:24:37.751 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:24:37.760 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:24:38.830 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:24:38.830 DEBUG 19960 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:24:38.832  INFO 19960 --- [http-nio-8082-exec-3] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:24:38.837 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:24:38.846 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:24:43.090 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:24:43.090 DEBUG 19960 --- [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:24:43.092  INFO 19960 --- [http-nio-8082-exec-4] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:24:43.096 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:24:43.105 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:24:43.883 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-08-04 23:24:43.884 DEBUG 19960 --- [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:24:43.888  INFO 19960 --- [http-nio-8082-exec-5] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:24:43.890 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:24:43.893 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:24:44.869 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-08-04 23:24:44.869 DEBUG 19960 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:24:44.871  INFO 19960 --- [http-nio-8082-exec-6] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:24:44.874 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:24:44.876 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:24:45.895 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-08-04 23:24:45.896 DEBUG 19960 --- [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:24:45.898  INFO 19960 --- [http-nio-8082-exec-7] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:24:45.901 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:24:45.904 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:24:47.191 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:24:47.192 DEBUG 19960 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:24:47.195  INFO 19960 --- [http-nio-8082-exec-9] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:24:47.198 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:24:47.208 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:24:48.210 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros/crear", parameters={}
+2022-08-04 23:24:48.211 DEBUG 19960 --- [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#crear()
+2022-08-04 23:24:48.213  INFO 19960 --- [http-nio-8082-exec-8] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:24:48.217 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:24:48.219 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:24:49.307 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:24:49.308 DEBUG 19960 --- [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:24:49.309  INFO 19960 --- [http-nio-8082-exec-10] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:24:49.313 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:24:49.323 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:24:50.123 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:24:50.123 DEBUG 19960 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:24:50.125  INFO 19960 --- [http-nio-8082-exec-1] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:24:50.128 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:24:50.137 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:24:52.527 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-08-04 23:24:52.527 DEBUG 19960 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:24:52.533  INFO 19960 --- [http-nio-8082-exec-2] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:24:52.537 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:24:52.540 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:26:03.196 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-08-04 23:26:03.197 DEBUG 19960 --- [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:26:03.198  INFO 19960 --- [http-nio-8082-exec-5] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:26:03.201 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:26:03.207 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:26:04.111 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-08-04 23:26:04.111 DEBUG 19960 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:26:04.112  INFO 19960 --- [http-nio-8082-exec-6] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:26:04.115 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:26:04.117 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:26:05.300 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-08-04 23:26:05.300 DEBUG 19960 --- [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:26:05.308  INFO 19960 --- [http-nio-8082-exec-7] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:26:05.311 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:26:05.314 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:26:07.791 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:26:07.792 DEBUG 19960 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:26:07.797  INFO 19960 --- [http-nio-8082-exec-9] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:26:07.800 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:26:07.809 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:26:09.470 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:26:09.471 DEBUG 19960 --- [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:26:09.474  INFO 19960 --- [http-nio-8082-exec-8] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:26:09.477 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:26:09.485 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:26:10.563 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:26:10.563 DEBUG 19960 --- [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:26:10.566  INFO 19960 --- [http-nio-8082-exec-10] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:26:10.569 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:26:10.579 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:26:11.664 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:26:11.665 DEBUG 19960 --- [http-nio-8082-exec-1] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:26:11.666  INFO 19960 --- [http-nio-8082-exec-1] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:26:11.671 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:26:11.673 DEBUG 19960 --- [http-nio-8082-exec-1] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:26:38.678 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:26:38.678 DEBUG 19960 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:26:38.680  INFO 19960 --- [http-nio-8082-exec-2] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:26:38.683 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:26:38.685 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:26:39.349 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:26:39.349 DEBUG 19960 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:26:39.350  INFO 19960 --- [http-nio-8082-exec-3] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:26:39.353 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:26:39.355 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:26:40.239 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/", parameters={}
+2022-08-04 23:26:40.240 DEBUG 19960 --- [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:26:40.244  INFO 19960 --- [http-nio-8082-exec-4] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:26:40.247 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:26:40.250 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:26:40.808 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:26:40.809 DEBUG 19960 --- [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:26:40.812  INFO 19960 --- [http-nio-8082-exec-5] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:26:40.815 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:26:40.825 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:26:42.218 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:26:42.219 DEBUG 19960 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:26:42.224  INFO 19960 --- [http-nio-8082-exec-6] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:26:42.227 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:26:42.234 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:26:42.885 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:26:42.885 DEBUG 19960 --- [http-nio-8082-exec-7] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:26:42.887  INFO 19960 --- [http-nio-8082-exec-7] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:26:42.891 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:26:42.893 DEBUG 19960 --- [http-nio-8082-exec-7] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:26:43.596 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros/crear", parameters={}
+2022-08-04 23:26:43.596 DEBUG 19960 --- [http-nio-8082-exec-9] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#crear()
+2022-08-04 23:26:43.598  INFO 19960 --- [http-nio-8082-exec-9] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:26:43.601 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:26:43.603 DEBUG 19960 --- [http-nio-8082-exec-9] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:26:45.059 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : GET "/destinos/crear", parameters={}
+2022-08-04 23:26:45.060 DEBUG 19960 --- [http-nio-8082-exec-8] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#crear()
+2022-08-04 23:26:45.066  INFO 19960 --- [http-nio-8082-exec-8] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:26:45.069 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:26:45.072 DEBUG 19960 --- [http-nio-8082-exec-8] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:26:46.323 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:26:46.324 DEBUG 19960 --- [http-nio-8082-exec-10] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:26:46.329  INFO 19960 --- [http-nio-8082-exec-10] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:26:46.332 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:26:46.335 DEBUG 19960 --- [http-nio-8082-exec-10] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:27:11.521 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:27:11.522 DEBUG 19960 --- [http-nio-8082-exec-2] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:27:11.524  INFO 19960 --- [http-nio-8082-exec-2] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:27:11.528 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:27:11.531 DEBUG 19960 --- [http-nio-8082-exec-2] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:27:12.050 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:27:12.051 DEBUG 19960 --- [http-nio-8082-exec-3] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:27:12.054  INFO 19960 --- [http-nio-8082-exec-3] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:27:12.058 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:27:12.062 DEBUG 19960 --- [http-nio-8082-exec-3] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:27:12.239 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:27:12.239 DEBUG 19960 --- [http-nio-8082-exec-4] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:27:12.241  INFO 19960 --- [http-nio-8082-exec-4] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:27:12.245 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:27:12.248 DEBUG 19960 --- [http-nio-8082-exec-4] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:27:12.419 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : GET "/destinos", parameters={}
+2022-08-04 23:27:12.419 DEBUG 19960 --- [http-nio-8082-exec-5] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.DestinoController#destinos()
+2022-08-04 23:27:12.419  INFO 19960 --- [http-nio-8082-exec-5] com.edutecno.service.DestinoServiceImp   : Ejecutando DestinoServiceImp findAll()
+2022-08-04 23:27:12.423 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:27:12.427 DEBUG 19960 --- [http-nio-8082-exec-5] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:27:13.254 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : GET "/pasajeros", parameters={}
+2022-08-04 23:27:13.255 DEBUG 19960 --- [http-nio-8082-exec-6] s.w.s.m.m.a.RequestMappingHandlerMapping : Mapped to com.edutecno.controller.PasajeroController#pasajeros()
+2022-08-04 23:27:13.258  INFO 19960 --- [http-nio-8082-exec-6] com.edutecno.service.PasajeroServiceImp  : Ejecutando PasajeroServiceImp findAll()
+2022-08-04 23:27:13.261 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.w.s.v.ContentNegotiatingViewResolver : Selected 'text/html' given [text/html, application/xhtml+xml, image/avif, image/webp, image/apng, application/xml;q=0.9, application/signed-exchange;v=b3;q=0.9, */*;q=0.8]
+2022-08-04 23:27:13.270 DEBUG 19960 --- [http-nio-8082-exec-6] o.s.web.servlet.DispatcherServlet        : Completed 200 OK
+2022-08-04 23:28:10.410  INFO 19960 --- [RMI TCP Connection(22)-127.0.0.1] inMXBeanRegistrar$SpringApplicationAdmin : Application shutdown requested.
+2022-08-04 23:28:10.431  INFO 19960 --- [RMI TCP Connection(22)-127.0.0.1] j.LocalContainerEntityManagerFactoryBean : Closing JPA EntityManagerFactory for persistence unit 'default'
+2022-08-04 23:28:10.435  INFO 19960 --- [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown initiated...
+2022-08-04 23:28:10.446  INFO 19960 --- [RMI TCP Connection(22)-127.0.0.1] com.zaxxer.hikari.HikariDataSource       : HikariPool-1 - Shutdown completed.
